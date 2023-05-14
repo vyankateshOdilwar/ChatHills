@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ChatHills</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chat">CHATS</string>
+    <string name="staus">STATUS</string>
+    <string name="call">CALLS</string>
+</resources>
