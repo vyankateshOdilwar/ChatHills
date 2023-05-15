@@ -1,13 +1,15 @@
 package com.example.chathills.models;
 
 public class Users {
-    public Users(String userName, String userEmail, String userPassword, String userProfilePicture, String userID, String lastMessage) {
+    public Users(String userName, String userEmail, String userPassword, String userProfilePicture, String userID, String lastMessage, String status) {
         this.userName = userName;
         this.userEmail = userEmail;
         this.userPassword = userPassword;
         this.userProfilePicture = userProfilePicture;
         this.userID = userID;
         this.lastMessage = lastMessage;
+        this.status = status;
+
     }
 
     public Users(){}
@@ -19,7 +21,22 @@ public class Users {
         this.userPassword = userPassword;
     }
 
-    String userName, userEmail, userPassword, userProfilePicture, userID, lastMessage;
+    String userName;
+    String userEmail;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    String userPassword;
+    String userProfilePicture;
+    String userID;
+    String lastMessage;
+    String status;
 
     public String getUserName() {
         return userName;

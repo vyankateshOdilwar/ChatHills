@@ -56,12 +56,13 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.settingMenu:
-                Toast.makeText(MainActivity.this, "Clicked on Settings Option", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+                startActivity(intent);
                 break;
             case R.id.logOut:
                 auth.signOut();
-                Intent intent = new Intent(MainActivity.this, SignInActivity.class);
-                startActivity(intent);
+                Intent intent2 = new Intent(MainActivity.this, SignInActivity.class);
+                startActivity(intent2);
                 break;
         }
         return true;
